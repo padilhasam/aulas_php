@@ -1,0 +1,47 @@
+private $modelo; // atributo trancado como um cofre
+private $motor;
+private $ano;
+
+// Métodos Geteres and Seteres
+// para cada atributo teremos um métodos que PEGA(GET) o valor e outro método que ALTERA(SET) o valor.
+
+public function getModelo(){
+  return $this -> modelo;
+} //Este método PEGA o valor contido no atributo modelo;
+public function setModelo($value1){
+  $this -> modelo = $value1; //Atributo modelo recebe o valor do parâmetro
+}//Este método ALTERA o valor contido no atributo modelo;
+
+public function getMotor(){
+  return $this -> motor;
+} //Este método PEGA o valor contido no atributo modelo;
+public function setMotor($value2){
+  $this -> motor = $value2; //Atributo modelo recebe o valor do parâmetro
+}//Este método ALTERA o valor contido no atributo modelo;
+
+public function getAno(){
+  return $this -> ano;
+} //Este método PEGA o valor contido no atributo modelo;
+public function setAno($value3){
+  $this -> ano = $value3; //Atributo modelo recebe o valor do parâmetro
+}//Este método ALTERA o valor contido no atributo modelo;
+
+// Criando método que exibe todas as informações contida em modelo, motor e ano
+
+  public function exbir(){
+      return array(
+        "Modelo" => "$this -> getModelo()",
+        "Motor" => "$this -> getMotor()",
+        "Ano" => "$this -> getAno()"
+      );
+  }
+
+} //Fechamento da classe
+
+
+  $gol = new Carro(); //Necessário instaciar a classe para começar a funcionar
+  $gol -> setModelo("Chaleira"); // Passando os valores aos atribustos
+  $gol -> setMotor("1.4");
+  $gol -> setAno ("1986");
+
+echo setMotor();
