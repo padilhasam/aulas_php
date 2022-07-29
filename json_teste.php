@@ -5,7 +5,7 @@
 	$pessoas = array();
 
 		array_push($pessoas, array(
-			"Nome" => "Gabriel Leonardo Padilha",
+			"Nome" => "Gabriel",
 			"Idade" => 17
 		));
 
@@ -17,7 +17,7 @@
 
 		echo "<br>";
 
-	$decodifica = json_decode('[{"Nome":"Gabriel Leonardo Padilha","Idade":17}]', true);
+	$decodifica = json_decode('[{"Nome":"Gabriel","Idade":17}]', true);
 
 		print_r($decodifica);
 ?>

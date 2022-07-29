@@ -17,7 +17,7 @@
 	}
 
 	$jeferson = new Pessoa();
-	$jeferson -> nome = "Jeferson Moisés Padilha";
+	$jeferson -> nome = "Jeferson";
 	$jeferson -> idade = 35;
 
 	echo $jeferson -> falar() . "<br>";

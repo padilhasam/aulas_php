@@ -37,7 +37,7 @@
 }//Final da Classe
 
   //Instanciando a classe
-  $meuEndereco = new Endereco("Rua João Wolski", "150", "Tindiquera", "Araucária", "Paraná");
+  $meuEndereco = new Endereco("Rua Bento Viana", "300", "São Joaquim", "Curitiba", "Paraná");
   var_dump($meuEndereco);
 
   //unset($meuEndereco); //Removendo objeto instanciado
