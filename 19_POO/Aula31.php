@@ -1,5 +1,7 @@
 <?php
+
   //Polimorfismo
+  
   abstract class Animal{
     public function falar(){
       return "Som";
@@ -24,8 +26,7 @@
       return "Canta";
     }
     public function mover(){
-      return "Voa e " . parent::mover();
-      //A palavra reservada parent serve para acessar a classe PAI, que neste caso é a classe Animal
+      return "Voa e " . parent::mover(); //A palavra reservada parent serve para acessar a classe PAI, que neste caso é a classe Animal
     }
   }
 
@@ -43,6 +44,6 @@
 
   $bird = new Passaro();
   echo $bird -> falar() . "<br>";
-  echo $bird -> mover() . "<br>";
+  echo $bird -> mover() . "<br>"; //Retorna "Voa e" do método mover() da classe Pássaro e concatena com "Anda" do método mover() da classe Animal (Pai);
 
 ?>

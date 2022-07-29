@@ -54,7 +54,6 @@
 
       return $html; //Retorna o resultado final após todo o processo de concatenação;
   }
-
       echo estrutura($hierarquia);
 
   ?>

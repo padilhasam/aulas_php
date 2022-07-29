@@ -24,9 +24,9 @@
 
 	//Segundo Caso
 	
-	$diasSemana = 7;
+	//$diasSemana = 7;
 	
-	switch($diasSemana){
+	switch($diadaSemana){
 		
 		case 0: 
 		echo "Domingo <br>";
@@ -59,8 +59,6 @@
 		default:
 			echo "Não existe!!";
 			
-	}
-	
-	
+	}	
 
 ?>

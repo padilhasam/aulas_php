@@ -8,9 +8,9 @@
 			"Maçã", "Banana", "Morango",
 			"Uva", "Laranja", "Mamão"
 		);
-			print_r($frutas);
+		print_r($frutas);
 			
-				echo "<br><br>";
+			echo "<br><br>";
 	
 	// ARRAY BIDIMENSIONAL
 

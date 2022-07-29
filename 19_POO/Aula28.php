@@ -1,36 +1,42 @@
 <?php
-    //Herança
+   
+   //Herança
 
     class Documento{
 
-      private $numero;
+      //Atributo
+      private $numero; 
 
+      //Métodos
       public function getNumero(){
         return $this -> numero;
-      }
+      }//Retorna o valor contido no atributo numero.
       public function setNumero($numero){
         $this -> numero = $numero;
-      }
+      }//Seta o Atributo numero com o valor passado por parâmetro.
 
     }
 
     class CPF extends Documento{
-
-      public function ValidarCPF():bool{
+      
+      //Métodos
+      public function ValidarCPF(){  
         $cpf = $this -> getNumero();
-
-        //Validação do CPF;
-
-        return true;
-
+        return $cpf;
       }
-      // O método CPF herda somente métodos e atributos públicos e protegidos, ou seja, neste caso somente GET and SET, pois são públicos.
 
     }
+    // A classe CPF herda somente métodos e atributos PUBLIC e PROTECTED da classe Pai, ou seja, somente GET and SET.
 
-    $doc = new CPF();
-    $doc -> setNumero("77386000049"); //Acessou o método SET herdado da classe PAI.
-    var_dump($doc -> ValidarCPF()); // Acessou a Classe ValidarCPF;
+    $documento = new CPF();
+    $documento -> setNumero("77386000049"); //Acessou o método SET herdado da classe Pai.
+    var_dump($documento -> ValidarCPF()); // Acessou a Classe ValidarCPF;
     echo "<br>";
-    echo $doc -> getNumero(); //Acessou método GET herdado da Classe Pai.
+    echo $documento -> getNumero(); //Acessou método GET herdado da Classe Pai.
+    echo "<br>";
+
+    $documentoNovo = new Documento();
+    $documentoNovo -> setNumero("12529648034");
+    echo $documentoNovo -> getNumero();
+
 ?>
