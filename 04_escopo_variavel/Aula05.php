@@ -29,4 +29,5 @@
 			echo "<br>"; //Quebra de linha;
 		teste3();
 			echo "<br>"; //Quebra de linha;
+			
 ?>
